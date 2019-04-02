@@ -7,10 +7,11 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
-public class frame_bukIN extends JFrame {
+public class Frame_BidaiOn extends JFrame {
 
 	private JPanel contentPane;
 
+	
 	/**
 	 * Launch the application.
 	 */
@@ -18,7 +19,7 @@ public class frame_bukIN extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					frame_bukIN frame = new frame_bukIN();
+					Frame_BidaiOn frame = new Frame_BidaiOn();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -30,9 +31,9 @@ public class frame_bukIN extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public frame_bukIN() {
+	public Frame_BidaiOn() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 300);
+		setBounds(100, 100, 800, 600);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setLayout(new BorderLayout(0, 0));

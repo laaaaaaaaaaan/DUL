@@ -1,16 +1,16 @@
-package app_bukIN;
+package app_BiDaiOn;
 
-import controlador.*;
-import modelo.alojamiento;
-import vista.frame_bukIN;
+import controlador.Controlador;
+import modelo.Alojamiento;
+import vista.Frame_BidaiOn;
 
-public class main_sp1 {
+public class Launcher_sprint1 {
 
 	public static void main(String[] args) {
 		
 		// Instancia de las clases necesarias para el programa
-		frame_bukIN vista = new frame_bukIN();
-		alojamiento modelo = new alojamiento();
+		Frame_BidaiOn vista = new Frame_BidaiOn();
+		Alojamiento modelo = new Alojamiento();
 		Controlador controlador = new Controlador(vista,modelo);
 
 		// Hacer la vista visible 

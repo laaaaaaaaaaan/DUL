@@ -1,6 +1,6 @@
 package controlador;
 
-public class buscador {
+public class Buscador {
 
 	
 }

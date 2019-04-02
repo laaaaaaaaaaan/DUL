@@ -2,12 +2,12 @@ package vista;
 
 import javax.swing.JPanel;
 
-public class pan_devoluciones extends JPanel {
+public class Pan_buscador extends JPanel {
 
 	/**
 	 * Create the panel.
 	 */
-	public pan_devoluciones() {
+	public Pan_buscador() {
 
 	}
 

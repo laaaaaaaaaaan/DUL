@@ -1,4 +1,4 @@
-package controlador;
+package test_controlador;
 
 import static org.junit.Assert.*;
 

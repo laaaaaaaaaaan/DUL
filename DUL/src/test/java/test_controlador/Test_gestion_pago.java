@@ -1,10 +1,10 @@
-package controlador;
+package test_controlador;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class test_buscador {
+public class Test_gestion_pago {
 
 	@Test
 	public void test() {

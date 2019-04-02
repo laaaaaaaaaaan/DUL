@@ -1,10 +1,10 @@
-package DUL;
+package test_app_BiDaiOn;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class test_main_sp1 {
+public class Test_Launcher_sprint1 {
 
 	@Test
 	public void test() {

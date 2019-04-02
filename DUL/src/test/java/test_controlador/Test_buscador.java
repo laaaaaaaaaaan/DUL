@@ -1,10 +1,10 @@
-package modelo;
+package test_controlador;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class test_hotel {
+public class Test_buscador {
 
 	@Test
 	public void test() {
