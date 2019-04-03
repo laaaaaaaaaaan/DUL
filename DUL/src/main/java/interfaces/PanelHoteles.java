@@ -2,12 +2,12 @@ package interfaces;
 
 import javax.swing.JPanel;
 
-public class Pan_bienvenida extends JPanel {
+public class PanelHoteles extends JPanel {
 
 	/**
 	 * Create the panel.
 	 */
-	public Pan_bienvenida() {
+	public PanelHoteles() {
 
 	}
 
