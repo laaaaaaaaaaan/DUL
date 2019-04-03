@@ -3,8 +3,8 @@ package controlador;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import interfaces.Frame_BidaiOn;
 import modelo.Alojamiento;
-import vista.Frame_BidaiOn;
 
 public class Controlador implements ActionListener {
 
