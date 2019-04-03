@@ -1,5 +1,5 @@
 package modelo;
 
-public class hotel {
-
+public class hotel extends alojamiento{
+	protected int nestrellas;
 }
