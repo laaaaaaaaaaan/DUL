@@ -19,5 +19,11 @@ public class test_alojamiento {
 		assertEquals(ubicacion, Alojamiento1.getUbicacion(), "Bilbao");
 		assertEquals(numHabitaciones, Alojamiento1.getNumHabitaciones(), 2);
 	}
+	
+	@Test
+	public void testNombre() {
+		Alojamiento1.setNombreAloj(nombreAloj);
+		assertEquals(nombreAloj, Alojamiento1.getNombreAloj());
+	}
 
 }
