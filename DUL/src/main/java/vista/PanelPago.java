@@ -1,4 +1,4 @@
-package interfaces;
+package vista;
 
 import java.awt.Color;
 import java.awt.Component;

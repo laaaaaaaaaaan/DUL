@@ -3,9 +3,9 @@ package controlador;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import interfaces.Ventana;
 import modelo.Alojamiento;
 import modelo.Modelo;
+import vista.Ventana;
 
 public class Controlador implements ActionListener {
 
