@@ -1,15 +1,14 @@
-package app_BiDaiOn;
+package controlador;
 
-import controlador.Controlador;
-import modelo.Alojamiento;
-import vista.Frame_BidaiOn;
+import modelo.Modelo;
+import vista.Ventana;
 
 public class Launcher_sprint1 {
 
 	public static void main(String[] args) {
 		
 		// Instancia de las clases necesarias para el programa
-		Vista vista = new Vista();
+		Ventana vista = new Ventana();
 		Modelo modelo = new Modelo();
 		Controlador controlador = new Controlador(vista,modelo);
 
