@@ -9,8 +9,8 @@ public class Launcher_sprint1 {
 	public static void main(String[] args) {
 		
 		// Instancia de las clases necesarias para el programa
-		Frame_BidaiOn vista = new Frame_BidaiOn();
-		Alojamiento modelo = new Alojamiento();
+		Vista vista = new Vista();
+		Modelo modelo = new Modelo();
 		Controlador controlador = new Controlador(vista,modelo);
 
 		// Hacer la vista visible 
