@@ -1,4 +1,4 @@
-package interfaces;
+package vista;
 
 import javax.swing.JPanel;
 

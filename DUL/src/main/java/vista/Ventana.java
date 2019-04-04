@@ -1,4 +1,4 @@
-package interfaces;
+package vista;
 
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
@@ -21,7 +21,7 @@ public class Ventana extends JFrame {
 		
 		panelBienvenida=new PanelBienvenida();
 		panelHoteles=new PanelHoteles();
-		panelPago=new PanelPago();
+		//panelPago=new PanelPago();
 		getContentPane().add(panelBienvenida);
 		getContentPane().add(panelHoteles);
 		
