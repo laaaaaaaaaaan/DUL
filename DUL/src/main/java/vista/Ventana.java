@@ -13,6 +13,7 @@ public class Ventana extends JFrame {
 	//private JPanel contentPane;
 	
 	public PanelBienvenida panelBienvenida;
+	public PanelBuscador panelBuscador;
 	public PanelHoteles panelHoteles;
 	public PanelPago panelPago;
 	
@@ -20,9 +21,11 @@ public class Ventana extends JFrame {
 	public Ventana() {
 		
 		panelBienvenida=new PanelBienvenida();
+		panelBuscador=new PanelBuscador();
 		panelHoteles=new PanelHoteles();
 		panelPago=new PanelPago();
 		getContentPane().add(panelBienvenida);
+		getContentPane().add(panelBuscador);
 		getContentPane().add(panelHoteles);
 		
 		
