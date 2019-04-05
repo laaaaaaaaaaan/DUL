@@ -16,6 +16,8 @@ public class Hotel extends Alojamiento{
 		NEstrellas = nEstrellas;
 	}
 	
-	
+	public void crearYMeterAutobuses() {
+		
+	}
 	
 }
