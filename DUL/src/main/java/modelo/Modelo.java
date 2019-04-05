@@ -1,34 +1,56 @@
 package modelo;
 
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.util.ArrayList;
-import com.sun.jndi.ldap.Connection;
 
 public class Modelo {
 
-	public Connection conexion;
+	public Conexion conexion;
+	public Hotel hotel;
+	
 	
 	public Modelo() {
-		//Creo la conexion
-//		conexion = new Connection();
+		//create connection
+		conexion = new Conexion();
 	}
 	
 	public ArrayList<Alojamiento> LeerHoteles(){
-		//Lee todos los hoteles
-		//crear SQL
-		//crear el Statement
-		//Ejecutar el Satatemesnt
-		//Pasar del RS a ArrayList de Hoteles
-		//Devoolver el ArrayList
+		//read * hotels
+		Hotel hotel = null;
+		ArrayList<Alojamiento> aloj = new ArrayList<Alojamiento>();
+		PreparedStatement stmt = null;
+		ResultSet result = null;
+		
+		String query = "SELECT * FROM hotel";
+		
+		//create SQL
+		conexion = conexion.conectar();
+		
+		//create the Statement
+		stmt = conexion.prepareStatement(query);
+		
+		//execute el Statements
+		result = stmt.executeQuery();
+		
+		//from RS of ArrayList to Hotel
+		while (result.next()) {
+			hotel = new Hotel(query, query, 0);
+			hotel.setNombreAloj(result.getString("Nombre"));
+			hotel.setUbicacion(result.getString("Ubicacion"));				
+		}
+		
+		//return ArrayList
 		return null;
 	}
 	
 	public Alojamiento LeerHoteles(String id){
-		//Lee el hotel con ese ID
+		//Read hotel with this.ID
 		return null;
 	}
 	
 	public ArrayList<String> LeerUbicaciones(){
-		//Devuelve las diferentes ubicaciones de un hotel
+		//return different locations of a hotel
 		return null;
 	}
 }
