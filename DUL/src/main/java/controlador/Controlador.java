@@ -26,6 +26,7 @@ public class Controlador implements ActionListener {
 	
 		this.vista.panelBienvenida.btnContinuar.addActionListener(this);
 		this.vista.panelBuscador.btnContinuar.addActionListener(this);
+		this.vista.panelHoteles.btnAtras.addActionListener(this);
 	}
 	
 	
@@ -33,12 +34,13 @@ public class Controlador implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		
-		if(e.getSource() == vista.panelBienvenida.btnContinuar) {
-			
+		if(e.getSource() == vista.panelBienvenida.btnContinuar) {		
 			vista.setContentPane(vista.panelBuscador);
-		}else if(e.getSource() == vista.panelBuscador.btnContinuar) {
-			
+		}else if(e.getSource() == vista.panelBuscador.btnContinuar) {			
 			vista.setContentPane(vista.panelHoteles);
+		}
+		else if(e.getSource() == vista.panelHoteles.btnAtras) {			
+			vista.setContentPane(vista.panelBuscador);
 		}
 		
 	}
