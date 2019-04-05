@@ -1,7 +1,7 @@
 package controlador;
 
-import modelo.Modelo;
-import vista.Ventana;
+import modelo.*;
+import vista.*;
 
 public class Launcher_sprint1 {
 

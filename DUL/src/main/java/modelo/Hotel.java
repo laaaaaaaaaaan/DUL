@@ -1,28 +1,24 @@
 package modelo;
 
 public class Hotel extends Alojamiento{
-	protected int NEstrellas;
+	protected int categoria;
 
-	public Hotel(String nombreAloj, String ubicacion, int nEstrellas) {
-		super(nombreAloj, ubicacion, nEstrellas);
-		NEstrellas = nEstrellas;
+	public Hotel(String nombreAloj, String ubicacion, int categoria) {
+		super(nombreAloj, ubicacion, categoria);
+		
+		this.categoria = categoria;
 	}
 
 	public int getNEstrellas() {
-		return NEstrellas;
+		return categoria;
 	}
 
-	public void setNEstrellas(int nEstrellas) {
-		NEstrellas = nEstrellas;
+	public void setNEstrellas(int categoria) {
+		this.categoria = categoria;
 	}
-	
-	public void add() {
-		
-	}
-	
 	
 	//Crea un hotel y lo mete en un array de hoteles
-	public void crearYMeterHoteles() {
+	public void add() {
 		
 	}
 	

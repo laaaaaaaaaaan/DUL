@@ -2,6 +2,8 @@ package vista;
 
 import javax.swing.JPanel;
 
+import modelo.Hotel;
+
 import javax.swing.JList;
 
 import java.awt.Color;
@@ -11,7 +13,7 @@ import javax.swing.JLabel;
 
 public class PanelHoteles extends JPanel {
 
-	public JList hoteles;
+	public JList<Object> hoteles;
 	public JButton btnAtras, btnContinuar;
 	private JLabel labelNombreHotel, labelUbicacion, labelPrecio, labelEstrellas, lblNombreHotel, lblUbicacion, lblPrecio, lblEstrellas;
 	
@@ -24,7 +26,7 @@ public class PanelHoteles extends JPanel {
 		btnAtras.setBounds(27, 536, 89, 23);
 		add(btnAtras);
 				
-		hoteles = new JList();
+		hoteles = new JList<Object>();
 		hoteles.setBounds(27, 189, 194, 181);
 		add(hoteles);
 		

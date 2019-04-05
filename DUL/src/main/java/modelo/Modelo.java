@@ -2,6 +2,7 @@ package modelo;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 
 public class Modelo {
@@ -13,9 +14,10 @@ public class Modelo {
 	public Modelo() {
 		//create connection
 		conexion = new Conexion();
+		conexion.conectar();
 	}
 	
-	public ArrayList<Alojamiento> LeerHoteles(){
+	public ArrayList<Alojamiento> LeerHoteles() throws SQLException{
 		//read * hotels
 		Hotel hotel = null;
 		ArrayList<Alojamiento> aloj = new ArrayList<Alojamiento>();
@@ -25,10 +27,10 @@ public class Modelo {
 		String query = "SELECT * FROM hotel";
 		
 		//create SQL
-		conexion = conexion.conectar();
+		conexion.conectar();
 		
 		//create the Statement
-		stmt = conexion.prepareStatement(query);
+		stmt = conexion.cnx.prepareStatement(query);
 		
 		//execute el Statements
 		result = stmt.executeQuery();
