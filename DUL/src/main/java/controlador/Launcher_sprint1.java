@@ -1,6 +1,5 @@
 package controlador;
 
-import modelo.Alojamiento;
 import modelo.Modelo;
 import vista.Ventana;
 
