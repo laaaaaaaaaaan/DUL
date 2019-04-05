@@ -34,6 +34,10 @@ public class Controlador implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		
 		if(e.getSource() == vista.panelBienvenida.btnContinuar) {
+			//crear panel buscador
+			//ir a la BBDD y distintas ubicaciones
+			//rellenar el combo de panel Buscador con el RS
+			//mostrar el panel buscador
 			
 			vista.setContentPane(vista.panelHoteles);
 		}else if(e.getSource() == vista.panelHoteles.btnAtras) {
