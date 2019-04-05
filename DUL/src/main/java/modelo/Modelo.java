@@ -1,7 +1,6 @@
 package modelo;
 
 import java.util.ArrayList;
-
 import com.sun.jndi.ldap.Connection;
 
 public class Modelo {
@@ -10,11 +9,11 @@ public class Modelo {
 	
 	public Modelo() {
 		//Creo la conexion
-		conexion = new Connection(null, null, 0, null, 0, 0, null);
+//		conexion = new Connection();
 	}
 	
 	public ArrayList<Alojamiento> LeerHoteles(){
-		//Leee todos los hoteles
+		//Lee todos los hoteles
 		//crear SQL
 		//crear el Statement
 		//Ejecutar el Satatemesnt
@@ -24,7 +23,7 @@ public class Modelo {
 	}
 	
 	public Alojamiento LeerHoteles(String id){
-		//Leee el hotel con ese ID
+		//Lee el hotel con ese ID
 		return null;
 	}
 	
