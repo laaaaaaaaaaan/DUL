@@ -27,7 +27,7 @@ public class Ventana extends JFrame {
 		getContentPane().add(panelBienvenida);
 		getContentPane().add(panelBuscador);
 		getContentPane().add(panelHoteles);
-		
+		//getContentPane().add(panelPago);
 		
 		
 		
