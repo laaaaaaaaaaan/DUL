@@ -3,8 +3,8 @@ package modelo;
 public class Hotel extends Alojamiento{
 	protected int NEstrellas;
 
-	public Hotel(String nombre, String ubicacion, int nEstrellas) {
-		super(nombre, ubicacion, nEstrellas);
+	public Hotel(String nombreAloj, String ubicacion, int nEstrellas) {
+		super(nombreAloj, ubicacion, nEstrellas);
 		NEstrellas = nEstrellas;
 	}
 
@@ -21,5 +21,9 @@ public class Hotel extends Alojamiento{
 	}
 	
 	
+	//Crea un hotel y lo mete en un array de hoteles
+	public void crearYMeterHoteles() {
+		
+	}
 	
 }
