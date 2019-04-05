@@ -3,6 +3,9 @@ package vista;
 import javax.swing.JPanel;
 
 import javax.swing.JList;
+
+import java.awt.Color;
+
 import javax.swing.JButton;
 import javax.swing.JTextField;
 import javax.swing.JLabel;
@@ -14,18 +17,18 @@ public class PanelHoteles extends JPanel {
 	public JTextField textFieldNombre, textFieldUbicacion, textFieldPrecio, textFieldEstrellas;
 	
 	public PanelHoteles() {
-
+		setBackground(new Color(255, 201, 164));
 		setBounds(0, 0, 800, 600);
 		setLayout(null);
 		
+		btnAtras = new JButton("Atras");
+		btnAtras.setBounds(27, 536, 89, 23);
+		add(btnAtras);
+		
 		
 		hoteles = new JList();
-		hoteles.setBounds(27, 163, 280, 143);
+		hoteles.setBounds(27, 189, 194, 181);
 		add(hoteles);
-		
-		btnAtras = new JButton("Atras");
-		btnAtras.setBounds(64, 513, 89, 23);
-		add(btnAtras);
 		
 		textFieldNombre = new JTextField();
 		textFieldNombre.setBounds(574, 161, 182, 23);

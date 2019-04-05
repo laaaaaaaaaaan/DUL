@@ -18,11 +18,15 @@ public class Ventana extends JFrame {
 		panelBienvenida=new PanelBienvenida();
 		panelBuscador=new PanelBuscador();
 		panelHoteles=new PanelHoteles();
+<<<<<<< HEAD
 //		panelPago=new PanelPago();
+=======
+		//panelPago=new PanelPago();
+>>>>>>> c3a15076533dbc62cfabecec7b10966e1a6b1143
 		getContentPane().add(panelBienvenida);
 		getContentPane().add(panelBuscador);
 		getContentPane().add(panelHoteles);
-		
+		//getContentPane().add(panelPago);
 		
 		
 		

@@ -19,7 +19,6 @@ public class Controlador implements ActionListener {
 		
 		vista.setContentPane(vista.panelBienvenida);
 		inicializarEventos();
-		
 		}
 	
 	public void inicializarEventos() {

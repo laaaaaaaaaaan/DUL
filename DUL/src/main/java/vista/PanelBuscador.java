@@ -10,6 +10,7 @@ import javax.swing.JComboBox;
 import javax.swing.DefaultComboBoxModel;
 
 public class PanelBuscador extends JPanel {
+
 	public JLabel lblUbicacion;
 	public JButton btnContinuar;
 	public JComboBox comboBox;
@@ -22,7 +23,7 @@ public class PanelBuscador extends JPanel {
 		lblUbicacion = new JLabel("Ubicacion");
 		lblUbicacion.setBounds(64, 158, 101, 23);
 		add(lblUbicacion);
-		
+
 		btnContinuar = new JButton("Continuar");
 		btnContinuar.setBounds(149, 414, 475, 23);
 		add(btnContinuar);
