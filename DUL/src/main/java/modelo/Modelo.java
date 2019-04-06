@@ -10,7 +10,6 @@ public class Modelo {
 	public Conexion conexion;
 	public Hotel hotel;
 	
-	
 	public Modelo() {
 		//create connection
 		conexion = new Conexion();

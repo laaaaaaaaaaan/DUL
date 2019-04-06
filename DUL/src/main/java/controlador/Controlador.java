@@ -46,7 +46,6 @@ public class Controlador implements ActionListener {
 		else if(e.getSource() == vista.panelHoteles.btnAtras) {			
 			vista.setContentPane(vista.panelBuscador);
 		}
-		
 		}
 	}
 }

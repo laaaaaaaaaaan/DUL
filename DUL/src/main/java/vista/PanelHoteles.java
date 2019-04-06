@@ -15,7 +15,7 @@ public class PanelHoteles extends JPanel {
 
 	public JList<Object> hoteles;
 	public JButton btnAtras, btnContinuar;
-	private JLabel labelNombreHotel, labelUbicacion, labelPrecio, labelEstrellas, lblNombreHotel, lblUbicacion, lblPrecio, lblEstrellas;
+	public JLabel labelNombreHotel, labelUbicacion, labelPrecio, labelEstrellas, lblNombreHotel, lblUbicacion, lblPrecio, lblEstrellas;
 	
 	public PanelHoteles() {
 		setBackground(new Color(255, 201, 164));
