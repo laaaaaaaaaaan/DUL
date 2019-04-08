@@ -12,7 +12,8 @@ public class Modelo {
 		//crear objeto conexion que establecera una conexion a bbdd
 		conexion = new Conexion();
 		conexion.conectar();
-		
+	
+	
 		//crear objeto conexion que establecera una conexion a bbdd
 		consulta = new Consultas(conexion);
 		

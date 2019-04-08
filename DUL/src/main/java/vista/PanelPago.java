@@ -32,16 +32,16 @@ public class PanelPago extends JPanel {
 	public PanelPago() {
 		setLayout(null);
 		setBounds(0, 0, 800, 600);
-		setBackground(new Color(193, 240, 240));
+		setBackground(new Color(255, 201, 164));
 
 		setBounds(0,0,800,600);
 		btnConfirmar = new JButton("Confirmar");
 		btnConfirmar.setBorder(new BevelBorder(BevelBorder.LOWERED, new Color(0, 0, 0), new Color(0, 0, 0), new Color(0, 0, 0), new Color(0, 0, 0)));
 		btnConfirmar.setAlignmentY(Component.TOP_ALIGNMENT);
-		btnConfirmar.setBackground(new Color(192, 192, 192));
+		//btnConfirmar.setBackground(new Color(192, 192, 192));
 		btnConfirmar.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-		btnConfirmar.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		btnConfirmar.setBounds(655, 527, 129, 35);
+		//btnConfirmar.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		btnConfirmar.setBounds(653, 536, 101, 23);
 		add(btnConfirmar);
 
 		lblDineroMetido = new JLabel("Dinero metido:");
@@ -191,10 +191,10 @@ public class PanelPago extends JPanel {
 		btnCancelar = new JButton("Cancelar");
 		btnCancelar.setBorder(new BevelBorder(BevelBorder.LOWERED, new Color(0, 0, 0), new Color(0, 0, 0), new Color(0, 0, 0), new Color(0, 0, 0)));
 		btnCancelar.setAlignmentY(Component.TOP_ALIGNMENT);
-		btnCancelar.setBackground(new Color(192, 192, 192));
+		//btnCancelar.setBackground(new Color(192, 192, 192));
 		btnCancelar.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-		btnCancelar.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		btnCancelar.setBounds(56, 527, 129, 35);
+		//btnCancelar.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		btnCancelar.setBounds(56, 536, 101, 23);
 		add(btnCancelar);
 
 		arrayBtn[0]=btn500;

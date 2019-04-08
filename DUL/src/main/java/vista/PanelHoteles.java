@@ -1,6 +1,7 @@
 package vista;
 
 import javax.swing.JPanel;
+import javax.swing.border.BevelBorder;
 
 import modelo.Hotel;
 
@@ -23,11 +24,12 @@ public class PanelHoteles extends JPanel {
 		setLayout(null);
 		
 		btnAtras = new JButton("Atras");
+		btnAtras.setBorder(new BevelBorder(BevelBorder.LOWERED, new Color(0, 0, 0), new Color(0, 0, 0), new Color(0, 0, 0), new Color(0, 0, 0)));
 		btnAtras.setBounds(27, 536, 89, 23);
 		add(btnAtras);
 				
 		hoteles = new JList<Object>();
-		hoteles.setBounds(27, 189, 194, 181);
+		hoteles.setBounds(48, 164, 194, 181);
 		add(hoteles);
 		
 		lblNombreHotel = new JLabel("Nombre hotel");
@@ -47,7 +49,8 @@ public class PanelHoteles extends JPanel {
 		add(lblEstrellas);
 		
 		btnContinuar = new JButton("Continuar");
-		btnContinuar.setBounds(574, 513, 101, 23);
+		btnContinuar.setBorder(new BevelBorder(BevelBorder.LOWERED, new Color(0, 0, 0), new Color(0, 0, 0), new Color(0, 0, 0), new Color(0, 0, 0)));
+		btnContinuar.setBounds(653, 536, 101, 23);
 		add(btnContinuar);
 		
 		labelNombreHotel = new JLabel("");
@@ -59,7 +62,7 @@ public class PanelHoteles extends JPanel {
 		add(labelUbicacion);
 		
 		labelPrecio = new JLabel("");
-		labelPrecio.setBounds(574, 256, 101, 23);
+		labelPrecio.setBounds(574, 252, 101, 23);
 		add(labelPrecio);
 		
 		labelEstrellas = new JLabel("");
@@ -67,7 +70,7 @@ public class PanelHoteles extends JPanel {
 		add(labelEstrellas);
 		
 		
-		
+
 		
 		
 	}
