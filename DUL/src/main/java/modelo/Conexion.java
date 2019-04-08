@@ -2,7 +2,6 @@ package modelo;
 
 import java.sql.DriverManager;
 import java.sql.SQLException;
-
 import java.sql.Connection;
 
 /**
@@ -12,10 +11,10 @@ import java.sql.Connection;
 public class Conexion {
 	Connection cnx = null;
 	
-	String bd="bidiaon_g5";
+	String bd="bidaion_g5";
 	String url="jdbc:mysql://localhost:3306/" + bd+"?useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC";
-	String user="bidaiongrupo5";
-	String pssw="bidaiong5";
+	String user="root";
+	String pssw="";
 	
 	public Connection conectar() {
 		try{
