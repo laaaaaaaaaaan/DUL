@@ -67,7 +67,7 @@ public class PanelHoteles extends JPanel {
 		add(labelEstrellas);
 		
 		
-		
+
 		
 		
 	}
