@@ -2,7 +2,8 @@ package modelo;
 
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import com.mysql.jdbc.Connection;
+
+import java.sql.Connection;
 
 /**
  * Clase que permite conectar con la base de datos
@@ -12,18 +13,18 @@ public class Conexion {
 	Connection cnx = null;
 	
 	String bd="bidiaon_g5";
-	String url="jdbc:mysql://localhost:3306/" + bd;
+	String url="jdbc:mysql://localhost:3306/" + bd+"?useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC";
 	String user="bidaiongrupo5";
 	String pssw="bidaiong5";
 	
 	public Connection conectar() {
 		try{
-			Class.forName("com.mysql.jdbc.Driver");
+			Class.forName("com.mysql.cj.jdbc.Driver");
 			cnx=(Connection) DriverManager.getConnection(url, user, pssw);
-			System.out.println("Coneión establecida...");
+			System.err.println("Conexión establecida...");
 		} catch (ClassNotFoundException | SQLException ex) {
 			ex.printStackTrace();
-			System.out.println("¡Error al conectarse!");
+			System.err.println("¡Error al conectarse!");
 		}
 		return cnx;
 	}
@@ -34,7 +35,7 @@ public class Conexion {
 		} catch (SQLException e) {
 			// TODO Bloque catch generado automáticamente
 			e.printStackTrace();
-			System.out.println("[ERROR] No se pudo terminar la conexión");
+			System.err.println("[ERROR] No se pudo terminar la conexión");
 		}
 	}
 }

@@ -14,6 +14,5 @@ public class Launcher_sprint1 {
 
 		// Hacer la vista visible 
 		vista.setVisible(true);
-		
 	    }
 }
