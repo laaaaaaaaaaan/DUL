@@ -9,7 +9,7 @@ public class Selecion_hotel {
 	/*Mete los datos en el label correspondiente
 	 * 
 	 */
-	public void datosHotel(Ventana vis, String nombre, String ubicacion, double precio, int estrellas) {		
+	public static void datosHotel(Ventana vis, String nombre, String ubicacion, double precio, int estrellas) {		
 		vis.panelHoteles.lblNombreHotel.setText(nombre);
 		vis.panelHoteles.lblUbicacion.setText(ubicacion);
 		vis.panelHoteles.lblPrecio.setText(Double.toString(precio));
@@ -19,7 +19,7 @@ public class Selecion_hotel {
 	/*Inserta los hoteles en el combobox de hoteles
 	 * 
 	 */
-	public static void meterHotelesEnComboBox(Ventana vis,Modelo mod, Hotel [] hotel) {
+	public void meterHotelesEnComboBox(Ventana vis,Modelo mod, Hotel [] hotel) {
 		hotel [0]=new Hotel("hotel1", "Madrid", 20);
 		hotel [1]=new Hotel("hotel2", "Madrid", 25);
 		hotel [2]=new Hotel("hotel3", "Madrid", 22);
@@ -50,7 +50,7 @@ public class Selecion_hotel {
 	/*devuelve la ubicacion
 	 * 
 	 */
-	public static String devolverUbicacion(Ventana vis) {
+	public String devolverUbicacion(Ventana vis) {
 		String ubicacion=(String) vis.panelBuscador.comboBox.getSelectedItem();
 		return ubicacion;
 	}

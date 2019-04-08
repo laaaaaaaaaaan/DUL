@@ -4,6 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import modelo.Alojamiento;
+import modelo.Hotel;
 import modelo.Modelo;
 import vista.Ventana;
 
@@ -48,4 +49,5 @@ public class Controlador implements ActionListener {
 		}
 		}
 	}
+
 }

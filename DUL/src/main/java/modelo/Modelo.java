@@ -25,9 +25,9 @@ public class Modelo {
 		ArrayList<Alojamiento> aloj = new ArrayList<Alojamiento>();
 		PreparedStatement stmt = null;
 		ResultSet result = null;
-		String ubicacion=controlador.Controlador.devolverUbicacion(vis);
+		//String ubicacion=controlador.Controlador.devolverUbicacion(vis);
 		
-		String query = "SELECT * FROM hotel where ubicacion="+ubicacion;
+		String query = "SELECT * FROM hotel where ubicacion=";
 		
 		//create SQL
 		conexion.conectar();
