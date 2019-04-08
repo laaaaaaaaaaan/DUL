@@ -7,6 +7,8 @@ import java.awt.Color;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
+import javax.swing.border.BevelBorder;
+
 import java.awt.Font;
 
 public class PanelBienvenida extends JPanel {
@@ -20,10 +22,11 @@ public class PanelBienvenida extends JPanel {
 		setLayout(null);
 		
 		btnContinuar = new JButton("Hacer Reserva");
+		btnContinuar.setBorder(new BevelBorder(BevelBorder.LOWERED, new Color(0, 0, 0), new Color(0, 0, 0), new Color(0, 0, 0), new Color(0, 0, 0)));
 		btnContinuar.setBounds(193, 496, 395, 23);
 		add(btnContinuar);
 		
-		lblBienvenido = new JLabel("Bienvenido");
+		lblBienvenido = new JLabel("Bienvenido a BidaiOn");
 		lblBienvenido.setFont(new Font("Yu Gothic UI", Font.PLAIN, 34));
 		lblBienvenido.setHorizontalAlignment(SwingConstants.CENTER);
 		lblBienvenido.setBounds(182, 59, 411, 103);
