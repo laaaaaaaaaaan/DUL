@@ -1,5 +1,6 @@
 package controlador;
 
+import vista.Ventana;
 import modelo.*;
 import vista.*;
 
@@ -14,5 +15,7 @@ public class Launcher_sprint1 {
 
 		// Hacer la vista visible 
 		vista.setVisible(true);
+		System.out.println(controlador.Controlador.devolverUbicacion(vista));
 	    }
+	
 }

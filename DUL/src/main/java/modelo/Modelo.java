@@ -5,10 +5,13 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+import controlador.Metodos;
+
 public class Modelo {
 
 	public Conexion conexion;
 	public Hotel hotel;
+	public Metodos metodo;
 	
 	public Modelo() {
 		//create connection
@@ -22,8 +25,9 @@ public class Modelo {
 		ArrayList<Alojamiento> aloj = new ArrayList<Alojamiento>();
 		PreparedStatement stmt = null;
 		ResultSet result = null;
+		String ubicacion=controlador.Controlador.devolverUbicacion(vis);
 		
-		String query = "SELECT * FROM hotel";
+		String query = "SELECT * FROM hotel where ubicacion="+ubicacion;
 		
 		//create SQL
 		conexion.conectar();

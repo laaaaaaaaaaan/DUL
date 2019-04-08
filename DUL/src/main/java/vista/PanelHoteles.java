@@ -47,7 +47,7 @@ public class PanelHoteles extends JPanel {
 		add(lblEstrellas);
 		
 		btnContinuar = new JButton("Continuar");
-		btnContinuar.setBounds(574, 513, 101, 23);
+		btnContinuar.setBounds(653, 536, 101, 23);
 		add(btnContinuar);
 		
 		labelNombreHotel = new JLabel("");
