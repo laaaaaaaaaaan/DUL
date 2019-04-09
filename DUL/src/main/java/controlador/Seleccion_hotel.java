@@ -1,10 +1,9 @@
 package controlador;
-import modelo.Alojamiento;
 import modelo.Hotel;
 import modelo.Modelo;
 import vista.Ventana;
 
-public class Selecion_hotel {
+public class Seleccion_hotel {
 
 	/*Mete los datos en el label correspondiente
 	 * 
@@ -37,13 +36,13 @@ public class Selecion_hotel {
 		hotel [1]=new Hotel("hotel2", "Madrid", 25);
 		hotel [2]=new Hotel("hotel3", "Madrid", 22);
 		if(seleccionado==1) {
-			datosHotel(vis, hotel[0].getNombreAloj(), hotel[0].getUbicacion(),4, hotel[0].getNEstrellas());
+			datosHotel(vis, hotel[0].getNombreAloj(), hotel[0].getUbicacion(),4, hotel[0].getCategoria());
 		}
 		else if(seleccionado==2) {
-			datosHotel(vis, hotel[1].getNombreAloj(), hotel[1].getUbicacion(),4, hotel[1].getNEstrellas());
+			datosHotel(vis, hotel[1].getNombreAloj(), hotel[1].getUbicacion(),4, hotel[1].getCategoria());
 		}
 		else if(seleccionado==3) {
-			datosHotel(vis, hotel[2].getNombreAloj(), hotel[2].getUbicacion(),4, hotel[2].getNEstrellas());
+			datosHotel(vis, hotel[2].getNombreAloj(), hotel[2].getUbicacion(),4, hotel[2].getCategoria());
 		}
 	}
 	
@@ -54,6 +53,4 @@ public class Selecion_hotel {
 		String ubicacion=(String) vis.panelBuscador.comboBox.getSelectedItem();
 		return ubicacion;
 	}
-	
-	
 }

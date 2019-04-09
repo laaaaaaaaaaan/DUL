@@ -7,6 +7,11 @@ public class Ventana extends JFrame {
 
 	//private JPanel contentPane;
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
 	public PanelBienvenida panelBienvenida;
 	public PanelBuscador panelBuscador;
 	public PanelHoteles panelHoteles;
@@ -34,7 +39,7 @@ public class Ventana extends JFrame {
 		setBounds(0, 0, 800, 600);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		getContentPane().setLayout(new CardLayout(0, 0));
-		setTitle("Termibus"); 
+		setTitle("BiDaiOn"); 
 		setLocationRelativeTo(null);
 		
 		/*setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

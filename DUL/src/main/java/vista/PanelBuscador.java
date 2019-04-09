@@ -1,26 +1,26 @@
 package vista;
 
 import javax.swing.JPanel;
-
-import javax.swing.JList;
 import javax.swing.JButton;
-import javax.swing.JTextField;
 import javax.swing.JLabel;
 import javax.swing.JComboBox;
-
 import java.awt.Color;
-
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.SwingConstants;
 import javax.swing.border.BevelBorder;
-
 import java.awt.Font;
 
 public class PanelBuscador extends JPanel {
 
-	public JLabel lblUbicacion;
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	
+	public JLabel lblUbicacion, lblEscojaElDestino;
 	public JButton btnContinuar;
-	public JComboBox comboBox;
+	public JComboBox<Object> comboBox;
 	
 	public PanelBuscador() {
 		setBackground(new Color(255, 201, 164));
@@ -36,12 +36,12 @@ public class PanelBuscador extends JPanel {
 		btnContinuar.setBounds(653, 536, 101, 23);
 		add(btnContinuar);
 		
-		comboBox = new JComboBox();
+		comboBox = new JComboBox<Object>();
 		comboBox.setModel(new DefaultComboBoxModel(new String[] {"Vizcaya", "Madrid", "Otros"}));
 		comboBox.setBounds(329, 304, 229, 22);
 		add(comboBox);
 		
-		JLabel lblEscojaElDestino = new JLabel("Escoja el destino de su reserva");
+		lblEscojaElDestino = new JLabel("Escoja el destino de su reserva");
 		lblEscojaElDestino.setFont(new Font("Tahoma", Font.PLAIN, 29));
 		lblEscojaElDestino.setHorizontalAlignment(SwingConstants.CENTER);
 		lblEscojaElDestino.setBounds(187, 121, 451, 126);
