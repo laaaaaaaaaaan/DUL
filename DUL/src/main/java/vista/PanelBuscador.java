@@ -20,7 +20,7 @@ public class PanelBuscador extends JPanel {
 	
 	public JLabel lblUbicacion, lblEscojaElDestino;
 	public JButton btnContinuar;
-	public JComboBox<Object> comboBox;
+	public JComboBox<String> comboBox;
 	
 	public PanelBuscador() {
 		setBackground(new Color(255, 201, 164));
@@ -36,8 +36,8 @@ public class PanelBuscador extends JPanel {
 		btnContinuar.setBounds(653, 536, 101, 23);
 		add(btnContinuar);
 		
-		comboBox = new JComboBox<Object>();
-		comboBox.setModel(new DefaultComboBoxModel(new String[] {"Vizcaya", "Madrid", "Otros"}));
+		comboBox = new JComboBox<String>();
+		//comboBox.setModel(new DefaultComboBoxModel(new String[] {"Bilbao", "Madrid", "Otros"}));
 		comboBox.setBounds(329, 304, 229, 22);
 		add(comboBox);
 		

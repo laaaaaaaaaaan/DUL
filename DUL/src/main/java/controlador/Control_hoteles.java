@@ -33,8 +33,10 @@ public abstract class Control_hoteles implements ListSelectionListener {
 		//Guardar ubicacion seleccionada
 		Hotel ubicacion = (Hotel) vista.panelBuscador.comboBox.getSelectedItem();
 		
+		
 		if(ubicacion != null) {
 			String ubicString = ubicacion.getUbicacion();
+			System.out.println("1111" + ubicString + "111");
 			
 			//Limpiar el JList de hoteles
 			vista.panelHoteles.hoteles.removeAll();

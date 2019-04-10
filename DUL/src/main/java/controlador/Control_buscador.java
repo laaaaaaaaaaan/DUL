@@ -1,42 +1,23 @@
 package controlador;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.ArrayList;
-import modelo.Hotel;
-import modelo.Modelo;
-import vista.Ventana;
 
-public class Control_buscador implements ActionListener{
+public class Control_buscador{
 	
-	private Ventana vista;
-	private Modelo modelo;
-	private ArrayList<Hotel> ubicaciones;
-	
-	//Constructor
-	public Control_buscador(Ventana vista, Modelo modelo) {
-		this.vista = vista;
-		this.modelo = modelo;
-	}
+	private static ArrayList<String> ubicaciones;
 
-	//Añadir listeners a los botones del panel 'buscador'
-	public void addListeners() {
-		vista.panelBuscador.comboBox.addActionListener(this);
-	}
-	
-	public void actionPerformed(ActionEvent arg0) {
+
+	public static void rellenarubicacionescombo() {
 		//Cargar las ciudades de la bbdd y mostrar
-		ubicaciones = modelo.consulta.getUbicaciones();
+		ubicaciones = Launcher_sprint1.modelo.consulta.getUbicaciones2();
 		
 		//Limpiar combobox de ubicaciones de la interfaz
-		vista.panelBuscador.comboBox.removeAllItems();
+		Launcher_sprint1.vista.panelBuscador.comboBox.removeAllItems();
 		
 		//Recorrer el arraylist de ubicaciones y 
 		//rellenarlos con las ubicaciones disponibles
 		for(int i=0; i < ubicaciones.size(); i++) {
-			Hotel ubicHotel = ubicaciones.get(i);
-			vista.panelBuscador.comboBox.addItem(ubicHotel);
-//			System.out.println(ubicHotel);
+			Launcher_sprint1.vista.panelBuscador.comboBox.addItem(ubicaciones.get(i).toString());
 		}
 		
 	}

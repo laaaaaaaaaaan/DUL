@@ -37,6 +37,7 @@ public class Controlador implements ActionListener {
 
 		if(e.getSource() == vista.panelBienvenida.btnContinuar) {		
 			vista.setContentPane(vista.panelBuscador);
+			Control_buscador.rellenarubicacionescombo();
 		}else if(e.getSource() == vista.panelBuscador.btnContinuar) {
 			vista.setContentPane(vista.panelHoteles);
 		}else if(e.getSource() == vista.panelHoteles.btnAtras) {			
@@ -44,7 +45,5 @@ public class Controlador implements ActionListener {
 		}else if(e.getSource() == vista.panelHoteles.btnContinuar) {
 			vista.setContentPane(vista.panelPago);
 		}
-		
 	}
-
 }
