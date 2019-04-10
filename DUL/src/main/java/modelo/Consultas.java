@@ -55,7 +55,7 @@ public class Consultas {
 	
 	//Cargar ubicaciones disponibles
 		public ArrayList<String> getUbicaciones2() {
-			ArrayList<String> ubicaciones = null;
+			ArrayList<String> ubicaciones = new ArrayList<String>();
 			PreparedStatement stmt = null;
 			ResultSet result = null;
 			
@@ -63,7 +63,7 @@ public class Consultas {
 
 			try {
 				//levantar la conexion
-				conexion.conectar();
+				connection = conexion.conectar();
 				
 				//preparar la consulta SQL a la base de datos
 				stmt = connection.prepareStatement(query);
