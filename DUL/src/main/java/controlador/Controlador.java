@@ -2,9 +2,6 @@ package controlador;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
-import modelo.Alojamiento;
-import modelo.Hotel;
 import modelo.Modelo;
 import vista.Ventana;
 
@@ -37,9 +34,10 @@ public class Controlador implements ActionListener {
 
 		if(e.getSource() == vista.panelBienvenida.btnContinuar) {		
 			vista.setContentPane(vista.panelBuscador);
-			Control_buscador.rellenarubicacionescombo();
+			Control_buscador.addUbicacionesCombo();
 		}else if(e.getSource() == vista.panelBuscador.btnContinuar) {
 			vista.setContentPane(vista.panelHoteles);
+			
 		}else if(e.getSource() == vista.panelHoteles.btnAtras) {			
 			vista.setContentPane(vista.panelBuscador);
 		}else if(e.getSource() == vista.panelHoteles.btnContinuar) {
