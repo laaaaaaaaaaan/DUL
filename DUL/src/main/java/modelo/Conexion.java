@@ -20,7 +20,7 @@ public class Conexion {
 		try{
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			cnx=(Connection) DriverManager.getConnection(url, user, pssw);
-			System.err.println("Conexión establecida...");
+			System.out.println("Conexión establecida...");
 		} catch (ClassNotFoundException | SQLException ex) {
 			ex.printStackTrace();
 			System.err.println("¡Error al conectarse!");
@@ -32,9 +32,8 @@ public class Conexion {
 		try {
 			cnx.close();
 		} catch (SQLException e) {
-			// TODO Bloque catch generado automáticamente
 			e.printStackTrace();
-			System.err.println("[ERROR] No se pudo terminar la conexión");
+			System.err.println("[ERROR] No se pudo finalizar la conexión");
 		}
 	}
 }

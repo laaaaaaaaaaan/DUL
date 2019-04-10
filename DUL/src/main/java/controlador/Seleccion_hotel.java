@@ -1,10 +1,9 @@
 package controlador;
-import modelo.Alojamiento;
 import modelo.Hotel;
 import modelo.Modelo;
 import vista.Ventana;
 
-public class Selecion_hotel {
+public class Seleccion_hotel {
 
 	/*Mete los datos en el label correspondiente
 	 * 
@@ -29,6 +28,7 @@ public class Selecion_hotel {
 	/*Muestra los datos de cada hotel
 	 * 
 	 */
+<<<<<<< HEAD:DUL/src/main/java/controlador/Selecion_hotel.java
 	public static void mostrarDatos(Ventana vis, Hotel [] hotel) {
 		vis.panelHoteles.hoteles.setSelectedIndex(0);
 		int seleccionado=vis.panelHoteles.hoteles.getSelectedIndex();	
@@ -40,6 +40,21 @@ public class Selecion_hotel {
 		}
 		else if(seleccionado==2) {
 			datosHotel(vis, hotel[2].getNombreAloj(), hotel[2].getUbicacion(),4, hotel[2].getNEstrellas());
+=======
+	public void mostrarDatos(Ventana vis, Hotel [] hotel) {
+		int seleccionado=vis.panelHoteles.hoteles.getSelectedIndex();
+		hotel [0]=new Hotel("hotel1", "Madrid", 20);
+		hotel [1]=new Hotel("hotel2", "Madrid", 25);
+		hotel [2]=new Hotel("hotel3", "Madrid", 22);
+		if(seleccionado==1) {
+			datosHotel(vis, hotel[0].getNombreAloj(), hotel[0].getUbicacion(),4, hotel[0].getCategoria());
+		}
+		else if(seleccionado==2) {
+			datosHotel(vis, hotel[1].getNombreAloj(), hotel[1].getUbicacion(),4, hotel[1].getCategoria());
+		}
+		else if(seleccionado==3) {
+			datosHotel(vis, hotel[2].getNombreAloj(), hotel[2].getUbicacion(),4, hotel[2].getCategoria());
+>>>>>>> 50bc11af56056ee72eaefdec4fdeac50534fb11f:DUL/src/main/java/controlador/Seleccion_hotel.java
 		}
 	}
 	
@@ -50,6 +65,4 @@ public class Selecion_hotel {
 		String ubicacion=(String) vis.panelBuscador.comboBox.getSelectedItem();
 		return ubicacion;
 	}
-	
-	
 }

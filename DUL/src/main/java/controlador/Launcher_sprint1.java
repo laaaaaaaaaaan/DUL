@@ -6,11 +6,14 @@ import vista.*;
 
 public class Launcher_sprint1 {
 
+	public static Modelo modelo;
+	public static Ventana vista;
+	
 	public static void main(String[] args) {
 		
 		// Instancia de las clases necesarias para el programa
-		Ventana vista = new Ventana();
-		Modelo modelo = new Modelo();
+		vista = new Ventana();
+		modelo = new Modelo();
 		Controlador controlador = new Controlador(vista,modelo);
 
 		// Hacer la vista visible 

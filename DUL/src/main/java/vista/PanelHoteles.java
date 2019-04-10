@@ -2,19 +2,24 @@ package vista;
 
 import javax.swing.JPanel;
 import javax.swing.border.BevelBorder;
-
 import modelo.Hotel;
-
 import javax.swing.JList;
-
 import java.awt.Color;
 
+import javax.swing.DefaultListModel;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 
 public class PanelHoteles extends JPanel {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	
 	public JList<Object> hoteles;
+	public DefaultListModel<Object> modeloHoteles = new DefaultListModel<Object>();
 	public JButton btnAtras, btnContinuar;
 	public JLabel labelNombreHotel, labelUbicacion, labelPrecio, labelEstrellas, lblNombreHotel, lblUbicacion, lblPrecio, lblEstrellas;
 	
