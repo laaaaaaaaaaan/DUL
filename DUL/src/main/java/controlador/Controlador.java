@@ -39,12 +39,22 @@ public class Controlador implements ActionListener {
 			vista.setContentPane(vista.panelBuscador);
 		}else if(e.getSource() == vista.panelBuscador.btnContinuar) {
 			vista.setContentPane(vista.panelHoteles);
+			Hotel hotel[]=new Hotel[3];
+			hotel [0]=new Hotel("hotel1", "Madrid", 20);
+			hotel [1]=new Hotel("hotel2", "Madrid", 25);
+			hotel [2]=new Hotel("hotel3", "Madrid", 22);
+			controlador.Selecion_hotel.meterHotelesEnComboBox(vista, modelo, hotel);			
+			controlador.Selecion_hotel.mostrarDatos(vista, hotel);
 		}else if(e.getSource() == vista.panelHoteles.btnAtras) {			
 			vista.setContentPane(vista.panelBuscador);
 		}else if(e.getSource() == vista.panelHoteles.btnContinuar) {
+			System.out.println("si va");
 			vista.setContentPane(vista.panelPago);
+			System.out.println("sale");
+		}if(e.getSource() == vista.panelPago.btnCancelar) {		
+			System.out.println("no va");
+		vista.setContentPane(vista.panelBuscador);
 		}
-		
 	}
 
 }
