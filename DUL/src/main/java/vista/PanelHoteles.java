@@ -21,7 +21,7 @@ public class PanelHoteles extends JPanel {
 	public JList<Object> hoteles;
 	public DefaultListModel<Object> modeloHoteles = new DefaultListModel<Object>();
 	public JButton btnAtras, btnContinuar;
-	public JLabel labelNombreHotel, labelUbicacion, labelPrecio, labelEstrellas, lblNombreHotel, lblUbicacion, lblPrecio, lblEstrellas;
+	public JLabel labelNombreHotel, labelUbicacion, labelPrecio, labelCategoria, lblNombreHotel, lblUbicación, lblPrecio, lblCategoría;
 	
 	public PanelHoteles() {
 		setBackground(new Color(255, 201, 164));
@@ -41,17 +41,17 @@ public class PanelHoteles extends JPanel {
 		lblNombreHotel.setBounds(436, 161, 101, 23);
 		add(lblNombreHotel);
 		
-		lblUbicacion = new JLabel("Ubicacion");
-		lblUbicacion.setBounds(436, 208, 101, 23);
-		add(lblUbicacion);
+		lblUbicación = new JLabel("Ubicacion");
+		lblUbicación.setBounds(436, 208, 101, 23);
+		add(lblUbicación);
 		
 		lblPrecio = new JLabel("Precio");
 		lblPrecio.setBounds(436, 252, 101, 23);
 		add(lblPrecio);
 		
-		lblEstrellas = new JLabel("Estrellas");
-		lblEstrellas.setBounds(436, 303, 101, 23);
-		add(lblEstrellas);
+		lblCategoría = new JLabel("Categoria");
+		lblCategoría.setBounds(436, 303, 101, 23);
+		add(lblCategoría);
 		
 		btnContinuar = new JButton("Continuar");
 		btnContinuar.setBorder(new BevelBorder(BevelBorder.LOWERED, new Color(0, 0, 0), new Color(0, 0, 0), new Color(0, 0, 0), new Color(0, 0, 0)));
@@ -70,9 +70,9 @@ public class PanelHoteles extends JPanel {
 		labelPrecio.setBounds(574, 252, 101, 23);
 		add(labelPrecio);
 		
-		labelEstrellas = new JLabel("");
-		labelEstrellas.setBounds(574, 303, 101, 23);
-		add(labelEstrellas);
+		labelCategoria = new JLabel("");
+		labelCategoria.setBounds(574, 303, 101, 23);
+		add(labelCategoria);
 		
 		
 
