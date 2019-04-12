@@ -20,7 +20,7 @@ public class Seleccion_hotel {
 	 */
 	public static void meterHotelesEnComboBox(Ventana vis,Modelo mod, Hotel [] hotel) {
 		for (int i = 0; i <hotel.length; i++) {
-			vis.panelHoteles.hoteles.setListData(hotel);
+			vis.panelHoteles.jlistHoteles.setListData(hotel);
 		}
 	}
 	
@@ -28,8 +28,8 @@ public class Seleccion_hotel {
 	 * 
 	 */
 	public static void mostrarDatos(Ventana vis, Hotel [] hotel) {
-		vis.panelHoteles.hoteles.setSelectedIndex(0);
-		int seleccionado=vis.panelHoteles.hoteles.getSelectedIndex();
+		vis.panelHoteles.jlistHoteles.setSelectedIndex(0);
+		int seleccionado=vis.panelHoteles.jlistHoteles.getSelectedIndex();
 		if(seleccionado==0) {
 			datosHotel(vis, hotel[0].getNombreAloj(), hotel[0].getUbicacion(),4, hotel[0].getCategoria());
 		}
