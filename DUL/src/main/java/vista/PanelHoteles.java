@@ -20,7 +20,7 @@ public class PanelHoteles extends JPanel {
 	
 	public JList<Object> jlistHoteles;
 	public DefaultListModel<Object> modeloHoteles = new DefaultListModel<Object>();
-	public JButton btnAtras, btnContinuar;
+	public JButton btnAtras, btnContinuar, btnSeleccionar;
 	public JLabel labelNombreHotel, labelUbicacion, labelPrecio, labelCategoria, lblNombreHotel, lblUbicación, lblPrecio, lblCategoría;
 	
 	public PanelHoteles() {
@@ -73,6 +73,10 @@ public class PanelHoteles extends JPanel {
 		labelCategoria = new JLabel("");
 		labelCategoria.setBounds(574, 303, 101, 23);
 		add(labelCategoria);
+		
+		btnSeleccionar = new JButton("Seleccionar");
+		btnSeleccionar.setBounds(275, 161, 111, 23);
+		add(btnSeleccionar);
 		
 		
 

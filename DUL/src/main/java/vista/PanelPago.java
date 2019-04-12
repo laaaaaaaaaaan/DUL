@@ -40,7 +40,6 @@ public class PanelPago extends JPanel {
 		setBounds(0, 0, 800, 600);
 		setBackground(new Color(255, 201, 164));
 
-		setBounds(0,0,800,600);
 		btnConfirmar = new JButton("Confirmar");
 		btnConfirmar.setBorder(new BevelBorder(BevelBorder.LOWERED, new Color(0, 0, 0), new Color(0, 0, 0), new Color(0, 0, 0), new Color(0, 0, 0)));
 		btnConfirmar.setAlignmentY(Component.TOP_ALIGNMENT);

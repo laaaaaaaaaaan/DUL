@@ -2,6 +2,7 @@ package vista;
 
 import java.awt.CardLayout;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 public class Ventana extends JFrame {
 
@@ -49,5 +50,7 @@ public class Ventana extends JFrame {
 		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);*/
 	}
+	
+	  
 
 }
