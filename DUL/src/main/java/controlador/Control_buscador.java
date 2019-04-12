@@ -7,9 +7,9 @@ public class Control_buscador{
 	private static ArrayList<String> ubicaciones;
 
 
-	public static void rellenarubicacionescombo() {
+	public static void addUbicacionesCombo() {
 		//Cargar las ciudades de la bbdd y mostrar
-		ubicaciones = Launcher_sprint1.modelo.consulta.getUbicaciones2();
+		ubicaciones = Launcher_sprint1.modelo.consulta.getUbicaciones();
 		
 		//Limpiar combobox de ubicaciones de la interfaz
 		Launcher_sprint1.vista.panelBuscador.comboBox.removeAllItems();

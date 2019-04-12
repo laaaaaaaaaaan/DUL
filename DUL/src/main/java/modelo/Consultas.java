@@ -16,45 +16,9 @@ public class Consultas {
 		this.conexion = conexion;
 		this.connection = null;
 	}
-
-	//Cargar ubicaciones disponibles
-	public ArrayList<Hotel> getUbicaciones() {
-		Hotel ubicHotel = null;
-		ArrayList<Hotel> ubicaciones = null;
-		PreparedStatement stmt = null;
-		ResultSet result = null;
-		
-		String query = "select DISTINCT(Ubicacion)FROM hoteles";
-
-		try {
-			//levantar la conexion
-			connection = conexion.conectar();
-			
-			//preparar la consulta SQL a la base de datos
-			stmt = connection.prepareStatement(query);
-			
-			//execute la consulta y guardarla en un ResultSet
-			result = stmt.executeQuery();
-			
-			//crear un objeto Hotel y añade los hoteles que limita la consulta a un ArrayList
-			while (result.next()) {
-				ubicHotel = new Hotel(query, query, 0);
-				ubicHotel.setNombreAloj(result.getString("Nombre"));
-				ubicHotel.setUbicacion(result.getString("Ubicacion"));
-				ubicaciones.add(ubicHotel);
-			}
-		} catch (SQLException e) {
-				e.printStackTrace();
-			} finally {
-			    //cerrar la conexion
-			    conexion.desconectar();
-			    try { connection.close(); } catch (Exception e) { e.printStackTrace(); }
-			} 
-		return ubicaciones;
-	}
 	
 	//Cargar ubicaciones disponibles
-		public ArrayList<String> getUbicaciones2() {
+		public ArrayList<String> getUbicaciones() {
 			ArrayList<String> ubicaciones = new ArrayList<String>();
 			PreparedStatement stmt = null;
 			ResultSet result = null;
@@ -86,10 +50,10 @@ public class Consultas {
 		}	
 	
 	//Cargar la lista de hoteles segun ubicacion seleccionada
-	public ArrayList<Hotel> getHoteles(String nomHoteles) throws SQLException{
+	public ArrayList<Alojamiento> getHoteles(String nomHoteles) throws SQLException{
 		//read * hotels
 		Hotel hotel = null;
-		ArrayList<Hotel> listaHoteles = new ArrayList<Hotel>();
+		ArrayList<Alojamiento> listaHoteles = new ArrayList<Alojamiento>();
 		PreparedStatement stmt = null;
 		ResultSet result = null;
 		
@@ -134,16 +98,5 @@ public class Consultas {
 			} 
 		//return ArrayList
 		return listaHoteles;
-	}
-	
-	
-	public Alojamiento LeerHoteles(String id){
-		//Read hotel with this.ID
-		return null;
-	}
-	
-	public ArrayList<String> LeerUbicaciones(){
-		//return different locations of a hotel
-		return null;
 	}
 }

@@ -4,9 +4,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ContainerEvent;
 import java.awt.event.ContainerListener;
-
 import modelo.Alojamiento;
 import modelo.Hotel;
+
 import modelo.Modelo;
 import vista.Ventana;
 
@@ -46,7 +46,7 @@ public class Controlador implements ActionListener, ContainerListener {
 		hotel [2]=new Hotel("hotel3", "Madrid", 22);
 		if(e.getSource() == vista.panelBienvenida.btnContinuar) {		
 			vista.setContentPane(vista.panelBuscador);
-			Control_buscador.rellenarubicacionescombo();
+			Control_buscador.addUbicacionesCombo();
 		}else if(e.getSource() == vista.panelBuscador.btnContinuar) {
 			controlador.Seleccion_hotel.meterHotelesEnComboBox(vista, controlador.Seleccion_hotel.cosas(hotel));
 			vista.setContentPane(vista.panelHoteles);

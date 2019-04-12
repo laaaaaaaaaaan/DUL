@@ -14,7 +14,7 @@ public abstract class Control_hoteles implements ListSelectionListener {
 
 	public Ventana vista;
 	public Modelo modelo;
-	private ArrayList<Hotel> hotelesList;
+	private ArrayList<Alojamiento> hotelesList;
 	Hotel ubicacion;
 	Hotel hotel;
 	
