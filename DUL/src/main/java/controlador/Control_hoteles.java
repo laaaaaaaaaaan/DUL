@@ -14,7 +14,7 @@ public abstract class Control_hoteles implements ListSelectionListener {
 
 	public Ventana vista;
 	public Modelo modelo;
-	private ArrayList<String> hotelesList;
+	private ArrayList<Alojamiento> hotelesList;
 	Hotel ubicacion;
 	Hotel hotel;
 	
@@ -29,7 +29,7 @@ public abstract class Control_hoteles implements ListSelectionListener {
 		vista.panelHoteles.hoteles.addListSelectionListener(this);
 	}
 	
-	public void addHotelesJList(ActionEvent e) throws SQLException {
+	public void actionPerformed(ActionEvent e) throws SQLException {
 		//Guardar ubicacion seleccionada
 		Hotel ubicacion = (Hotel) vista.panelBuscador.comboBox.getSelectedItem();
 		

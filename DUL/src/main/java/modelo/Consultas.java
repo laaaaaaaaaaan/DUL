@@ -50,10 +50,10 @@ public class Consultas {
 		}	
 	
 	//Cargar la lista de hoteles segun ubicacion seleccionada
-	public ArrayList<String> getHoteles(String nomHoteles) throws SQLException{
+	public ArrayList<Alojamiento> getHoteles(String nomHoteles) throws SQLException{
 		//read * hotels
 		Hotel hotel = null;
-		ArrayList<String> listaHoteles = new ArrayList<String>();
+		ArrayList<Alojamiento> listaHoteles = new ArrayList<Alojamiento>();
 		PreparedStatement stmt = null;
 		ResultSet result = null;
 		
