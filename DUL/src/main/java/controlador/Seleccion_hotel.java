@@ -18,27 +18,28 @@ public class Seleccion_hotel {
 	/*Inserta los hoteles en el combobox de hoteles
 	 * 
 	 */
-	public static void meterHotelesEnComboBox(Ventana vis,Modelo mod, Hotel [] hotel) {
-		for (int i = 0; i <hotel.length; i++) {
-			vis.panelHoteles.hoteles.setListData(hotel);
+	public static void meterHotelesEnComboBox(Ventana vis, String [] nombreHotel) {
+		for (int i = 0; i <nombreHotel.length; i++) {
+			vis.panelHoteles.hoteles.setListData(nombreHotel);
 		}
+	}
+	
+	public static String [] cosas (Hotel [] hotel) {
+		String[] cosas = new String[hotel.length];
+		for (int i = 0; i <cosas.length; i++) {
+			cosas[i]=hotel[i].getNombreAloj();
+		}
+		return cosas;
+		
 	}
 	
 	/*Muestra los datos de cada hotel
 	 * 
 	 */
 	public static void mostrarDatos(Ventana vis, Hotel [] hotel) {
-		vis.panelHoteles.hoteles.setSelectedIndex(0);
+		//vis.panelHoteles.hoteles.setSelectedIndex(0);
 		int seleccionado=vis.panelHoteles.hoteles.getSelectedIndex();
-		if(seleccionado==0) {
-			datosHotel(vis, hotel[0].getNombreAloj(), hotel[0].getUbicacion(),4, hotel[0].getCategoria());
-		}
-		else if(seleccionado==1) {
-			datosHotel(vis, hotel[1].getNombreAloj(), hotel[1].getUbicacion(),4, hotel[1].getCategoria());
-		}
-		else if(seleccionado==2) {
-			datosHotel(vis, hotel[2].getNombreAloj(), hotel[2].getUbicacion(),4, hotel[2].getCategoria());
-		}
+		datosHotel(vis, hotel[seleccionado].getNombreAloj(), hotel[seleccionado].getUbicacion(),4, hotel[seleccionado].getCategoria());
 	}
 	
 	/*devuelve la ubicacion
