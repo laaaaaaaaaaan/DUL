@@ -5,6 +5,6 @@
 	<classpathentry kind="src" path="DUL/src/test/java"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/r4_bbdd_conex"/>
-	<classpathentry kind="lib" path="C:/workspace_r4/DUL/DUL/src/main/java/resources/mysql-connector-java-8.0.15.jar"/>
+	<classpathentry kind="lib" path="C:/Users/IN1DM3B_16/eclipse-workspace/DUL/DUL/mysql-connector-java-8.0.15/mysql-connector-java-8.0.15.jar"/>
 	<classpathentry kind="output" path="DUL/bin/main"/>
 </classpath>
