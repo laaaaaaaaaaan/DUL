@@ -52,12 +52,11 @@ public class Controlador implements ActionListener, ContainerListener {
 			vista.setContentPane(vista.panelHoteles);
 		}else if(e.getSource() == vista.panelHoteles.btnSeleccionar) {			
 			controlador.Seleccion_hotel.mostrarDatos(vista, hotel);
-		}else if(e.getSource() == vista.panelHoteles.hoteles) {			
-			controlador.Seleccion_hotel.mostrarDatos(vista, hotel);
 		}else if(e.getSource() == vista.panelHoteles.btnAtras) {			
 			vista.setContentPane(vista.panelBuscador);
 		}else if(e.getSource() == vista.panelHoteles.btnContinuar) {
-			vista.setContentPane(vista.panelPago);						
+			vista.setContentPane(vista.panelPago);
+			//vista.VistaPrincipal();
 		}else if(e.getSource() == vista.panelPago.btnCancelar) {
 			vista.setContentPane(vista.panelHoteles);
 		}

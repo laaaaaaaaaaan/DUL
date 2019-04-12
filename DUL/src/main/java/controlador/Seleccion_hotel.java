@@ -1,4 +1,6 @@
 package controlador;
+import javax.swing.JOptionPane;
+
 import modelo.Hotel;
 import modelo.Modelo;
 import vista.Ventana;
@@ -42,6 +44,18 @@ public class Seleccion_hotel {
 		datosHotel(vis, hotel[seleccionado].getNombreAloj(), hotel[seleccionado].getUbicacion(),4, hotel[seleccionado].getCategoria());
 	}
 	
+	public static void tres(Ventana vis) {
+		String nombre="";
+		if(nombre==vis.panelHoteles.labelNombreHotel.getText()) {
+			if(JOptionPane.showConfirmDialog(null,"gxdd")==JOptionPane.YES_OPTION) {
+				System.exit(0);
+			}
+			else {
+				JOptionPane.showConfirmDialog(null,"no has cerrado nada");
+			}
+		}
+	}
+	
 	/*devuelve la ubicacion
 	 * 
 	 */
@@ -49,4 +63,5 @@ public class Seleccion_hotel {
 		String ubicacion=(String) vis.panelBuscador.comboBox.getSelectedItem();
 		return ubicacion;
 	}
+	
 }
