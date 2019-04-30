@@ -5,7 +5,12 @@
 	<classpathentry kind="src" path="DUL/src/test/java"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/r4_bbdd_conex"/>
+<<<<<<< HEAD
+	<classpathentry kind="lib" path="C:/Users/IN1DM3B_16/eclipse-workspace/DUL/DUL/mysql-connector-java-8.0.15/mysql-connector-java-8.0.15.jar"/>
+	<classpathentry kind="lib" path="DUL/src/main/java/resources/mysql-connector-java-8.0.15.jar"/>
+=======
 	<classpathentry kind="lib" path="librerias/jcalendar-1.4.jar"/>
 	<classpathentry kind="lib" path="librerias/mysql-connector-java-8.0.15.jar"/>
+>>>>>>> 48e89b360ae3a2e70bf42332d664708879391a1d
 	<classpathentry kind="output" path="DUL/bin/main"/>
 </classpath>

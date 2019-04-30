@@ -50,14 +50,21 @@ public class Consultas {
 		}	
 	
 	//Cargar la lista de hoteles segun ubicacion seleccionada
+<<<<<<< HEAD
+	public ArrayList<Hotel> getHotelesUbicacion(String ubicacion){
+		//read * hotels
+		Hotel hotel = null;
+		ArrayList<Hotel> listaHoteles = new ArrayList<Hotel>();
+=======
 	public ArrayList<Alojamiento> getHoteles(String nomHoteles) throws SQLException{
 		//read * hotels
 		Hotel hotel = null;
 		ArrayList<Alojamiento> listaHoteles = new ArrayList<Alojamiento>();
+>>>>>>> 48e89b360ae3a2e70bf42332d664708879391a1d
 		PreparedStatement stmt = null;
 		ResultSet result = null;
 		
-		String query = "SELECT Nombre, Tarifa FROM hotel WHERE Ubicacion=?";
+		String query = "SELECT * FROM hoteles WHERE Ubicacion=?";
 
 		
 		try {
@@ -66,28 +73,22 @@ public class Consultas {
 			
 			//preparar la consulta SQL a la base de datos
 			stmt = connection.prepareStatement(query);
-			stmt.setString(1, nomHoteles);
-			System.out.println("00"+ nomHoteles+"00");
+			stmt.setString(2, ubicacion);
+			System.out.println(ubicacion);
 			
 			//execute la consulta y guardarla en un ResultSet
 			result = stmt.executeQuery();
 			
 			//crear un objeto Hotel y añade los hoteles que limita la consulta a un ArrayList
 			while (result.next()) {
-				hotel = new Hotel(query, query, 0);
+				hotel = new Hotel();
+				hotel.setId(result.getString("Id"));
 				hotel.setNombreAloj(result.getString("Nombre"));
 				hotel.setUbicacion(result.getString("Ubicacion"));
-				hotel.setCategoria(result.getInt(0));
+				hotel.setPrecio(result.getDouble("Precio"));
+				//hotel.setCategoria(result.getInt("Categoria"));
 				listaHoteles.add(hotel);
 			}
-//			while (result.next()) {
-//				hotel = new Hotel(
-//					result.getString("Nombre"),
-//					result.getString("Ubicacion"),
-//					result.getInt("Tarifa")
-//				);
-//				listAlojs.add(hotel);
-//			}
 		} catch (SQLException e) {
 				e.printStackTrace();
 			} finally {
